@@ -1,0 +1,49 @@
+<div class="col-md-6 offset-md-3">
+<h3>Add Car Servive</h3>
+<form (ngSubmit)="onSubmit()" >
+
+    <div class="form-group">
+        <label>DATE: </label>
+        <input type="date" class="form-control" id="date"
+            [(ngModel)] ="carserv.date" name="date">
+    </div>
+
+    <div class="form-group">
+        <label>DESCRIPTION: </label>
+        <input type="text" class="form-control" id="description"
+            [(ngModel)] ="carserv.description" name="description">
+    </div>
+
+    <div class="form-group">
+        <label>QUANTITY: </label>
+        <input type="number" class="form-control" id="quantity"
+            [(ngModel)] ="carserv.quantity" name="quantity">
+    </div>
+
+    <div class="form-group">
+        <label>PRICE: </label>
+        <input type="number" class="form-control" id="price"
+            [(ngModel)] ="carserv.price" name="price">
+    </div>
+
+    <div class="form-group">
+        <label>PLATE NO: </label>
+        <input type="text" class="form-control" id="plateNo"
+            [(ngModel)] ="carserv.plateNo" name="plateNo">
+    </div>
+
+    <div class="form-group">
+        <label>REF NO: </label>
+        <input type="text" class="form-control" id="refNo"
+            [(ngModel)] ="carserv.refNo" name="refNo">
+    </div>
+
+    <div class="form-group">
+        <label>LICENCE NO: </label>
+        <input type="number" class="form-control" id="licence"
+            [(ngModel)] ="carserv.licence" name="licence">
+    </div>
+
+    <button class="btn btn-success" type="submit">SUBMIT</button>
+</form>
+</div>

@@ -1,0 +1,26 @@
+<h2>SERVICE LIST</h2>
+<table class="table table-striped">
+    <thead>
+        <th>DATE</th>
+        <th>DESCRIPTION</th>
+        <th>QUANTITY</th>
+        <th>PRICE</th>
+        <th>PLATENO</th>
+        <th>REFNO</th>
+        <th>LICENCE</th>
+        <th>ACTIONS</th>
+    </thead>
+    <tbody>
+        <tr *ngFor ="let carService of carServices">
+            <td>{{ carService.date }}</td>
+            <td>{{ carService.description }}</td>
+            <td>{{ carService.quantity }}</td>
+            <td>{{ carService.price }}</td>
+            <td>{{ carService.plateNo }}</td>
+            <td>{{ carService.refNo }}</td>
+            <td>{{ carService.licence }}</td>
+            <td><button (click) ="updateservice(carService.id)" class="btn btn-info">update</button></td>
+            <td><button (click) ="deleteservice(carService.id)" class="btn btn-danger" style="margin-left: 10px;">DELETE</button></td>
+        </tr>
+    </tbody>
+</table>
